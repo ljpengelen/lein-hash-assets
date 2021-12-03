@@ -1,5 +1,7 @@
 # lein-hash-assets
 
+[![Clojars Project](https://img.shields.io/clojars/v/com.github.ljpengelen/lein-hash-assets.svg)](https://clojars.org/com.github.ljpengelen/lein-hash-assets)
+
 A Leiningen plugin that
 1. adds md5 hashes to the filenames of your static assets and
 1. uses these filenames in your `index.html`.
@@ -9,7 +11,7 @@ Do not allow caching of `index.html` itself, however.
 
 ## Usage
 
-First, put `[lein-hash-assets "0.1.0-SNAPSHOT"]` into the `:plugins` vector of your project.clj and provide a configuration of the following form:
+First, put `[com.github.ljpengelen/lein-hash-assets "0.1.0"]` into the `:plugins` vector of your project.clj and provide a configuration of the following form:
 
 ```
 :hash-assets {:source-root "resources/public"
