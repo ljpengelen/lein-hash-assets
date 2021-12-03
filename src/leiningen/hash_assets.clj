@@ -20,7 +20,8 @@
   (reduce (fn [s [match replacement]] (str/replace s match replacement)) content replacements))
 
 (defn hash-assets
-  [project & _args]
+  "Add md5 hashes to the filenames of your static assets and use those in your index.html."
+  [project]
   (let [{:keys [source-root target-root index files]} (:hash-assets project)
         hashed-files (hash-files source-root files)
         index-content (slurp (str source-root "/" index))
