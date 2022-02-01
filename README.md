@@ -27,7 +27,7 @@ Then, execute the following command:
 
     $ lein hash-assets
 
-For the given configuratio, this will calculate the md5 hashes of `resources/public/css/screen.css` and `resources/public/js/compiled/app.js`, and save copies of these files with the corresponding hashes in their filename as `dist/css/screen-<hash>.css` and `dist/js/compiled/app-<hash>.js`.
+For the given configuration, this will calculate the md5 hashes of `resources/public/css/screen.css` and `resources/public/js/compiled/app.js`, and save copies of these files with the corresponding hashes in their filename as `dist/css/screen-<hash>.css` and `dist/js/compiled/app-<hash>.js`.
 Additionally, it will copy `resources/public/index.html` into `dist/index.html`, with all references to the original files replaced by their renamed counterparts.
 
 ## License
